@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo del Centro Histórico de Cartagena</title>
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>📍 Mapa Interactivo del Centro Histórico de Cartagena</h1>
+        <nav>
+            <ul>
+                <li><a href="#map">Mapa</a></li>
+                <li><a href="#about">Información</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Contenedor del mapa -->
+        <section id="map" style="position: relative;">
+            <div id="tipos" style="position: absolute;">
+                <button id="tipo1"> <img src="assets/img/comercio_icono.png" alt=""> Comercio</button>
+                <button id="tipo2"> <img src="assets/img/vivienda_icono.png" alt=""> Vivienda</button>
+                <button id="tipo3"> <img src="assets/img/ambiente_icono.png" alt=""> Ambiente</button>
+                <button id="tipo4"> <img src="assets/img/patrimonio_icono.png" alt=""> Patrimonio</button>
+            </div>
+            <img src="assets/img/cerrar.png" id="cerrar" style="position: absolute;">
+            <div id="info" style="position: absolute;">
+
+            </div>
+        </section>
+
+        <!-- Información adicional -->
+        <section id="about">
+            <h2>Sobre el Proyecto</h2>
+            <p>
+                Este mapa interactivo permite explorar los puntos de interés más destacados del centro histórico de Cartagena.
+                Selecciona diferentes tipos de componentes como <strong>Comercio</strong>, <strong>Vivienda</strong>, 
+                <strong>Ambiente</strong> y <strong>Patrimonio</strong> para ver información detallada con imágenes 
+                y ubicaciones precisas.
+            </p>
+        </section>
+
+        <!-- Información de contacto -->
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctanos a: <a href="mailto:info@mapacartagena.com">info@mapacartagena.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mapa Interactivo Cartagena | Desarrollado por <strong>Tu Nombre</strong></p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <!-- Archivo JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

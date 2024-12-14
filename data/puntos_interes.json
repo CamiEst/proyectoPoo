@@ -1,0 +1,67 @@
+{
+  "puntos": [
+    {
+      "tipo": "comercio",
+      "lat": 10.4234,
+      "lon": -75.5471,
+      "direccion": "Carrera 7 # 39-1",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/012/705/641/large_2x/cartoon-mountain-landscape-with-blue-sky-sun-and-clouds-green-field-meadows-grassland-2d-cartoon-scene-hills-look-like-piramid-free-vector.jpg"
+    },
+    {
+      "tipo": "vivienda",
+      "lat": 10.4237,
+      "lon": -75.5467,
+      "direccion": "Calle 38 # 7-12",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/012/705/641/large_2x/cartoon-mountain-landscape-with-blue-sky-sun-and-clouds-green-field-meadows-grassland-2d-cartoon-scene-hills-look-like-piramid-free-vector.jpg"
+    },
+    {
+      "tipo": "ambiente",
+      "lat": 10.4239,
+      "lon": -75.5464,
+      "direccion": "Parque Central Cuadra 3",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/012/705/641/large_2x/cartoon-mountain-landscape-with-blue-sky-sun-and-clouds-green-field-meadows-grassland-2d-cartoon-scene-hills-look-like-piramid-free-vector.jpg"
+    },
+    {
+      "tipo": "patrimonio",
+      "lat": 10.4241,
+      "lon": -75.5460,
+      "direccion": "Baluarte de San Francisco, Cuadra 2",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/012/705/641/large_2x/cartoon-mountain-landscape-with-blue-sky-sun-and-clouds-green-field-meadows-grassland-2d-cartoon-scene-hills-look-like-piramid-free-vector.jpg"
+    },
+    {
+      "tipo": "comercio",
+      "lat": 10.4245,
+      "lon": -75.5457,
+      "direccion": "Calle 37 # 6-3",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/012/705/641/large_2x/cartoon-mountain-landscape-with-blue-sky-sun-and-clouds-green-field-meadows-grassland-2d-cartoon-scene-hills-look-like-piramid-free-vector.jpg"
+    },
+    {
+      "tipo": "vivienda",
+      "lat": 10.4247,
+      "lon": -75.5454,
+      "direccion": "Carrera 6 # 36-10",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/012/705/641/large_2x/cartoon-mountain-landscape-with-blue-sky-sun-and-clouds-green-field-meadows-grassland-2d-cartoon-scene-hills-look-like-piramid-free-vector.jpg"
+    },
+    {
+      "tipo": "ambiente",
+      "lat": 10.4250,
+      "lon": -75.5451,
+      "direccion": "Parque Pequeño Calle 36",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/012/705/641/large_2x/cartoon-mountain-landscape-with-blue-sky-sun-and-clouds-green-field-meadows-grassland-2d-cartoon-scene-hills-look-like-piramid-free-vector.jpg"
+    },
+    {
+      "tipo": "patrimonio",
+      "lat": 10.4253,
+      "lon": -75.5448,
+      "direccion": "Monumento Histórico Cuadra 1",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/012/705/641/large_2x/cartoon-mountain-landscape-with-blue-sky-sun-and-clouds-green-field-meadows-grassland-2d-cartoon-scene-hills-look-like-piramid-free-vector.jpg"
+    },
+    {
+      "tipo": "comercio",
+      "lat": 10.4255,
+      "lon": -75.5445,
+      "direccion": "Calle 36 # 5-15",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/012/705/641/large_2x/cartoon-mountain-landscape-with-blue-sky-sun-and-clouds-green-field-meadows-grassland-2d-cartoon-scene-hills-look-like-piramid-free-vector.jpg"
+    }
+  ]
+}
