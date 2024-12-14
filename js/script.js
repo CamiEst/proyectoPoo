@@ -68,11 +68,34 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
-map.on('dclick',()=>{
-    this.preventEventDeafult();
-});
+// Usar la API de geolocalización para obtener la ubicación del usuario
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+        (position) => {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+            console.log(`Ubicación detectada: ${lat}, ${lng}`);
+            map.setView([lat, lng], 15); // Centrar el mapa en la ubicación del usuario con un zoom de 15
 
+            const userIcon = L.icon({
+                iconUrl: './assets/img/tu.png', // Ruta al icono
+                iconSize: [50, 50], // Tamaño del icono
+                iconAnchor: [25, 50], // Ancla del icono (el punto en el que se coloca el marcador)
+                popupAnchor: [0, -50] // Ajuste del popup respecto al icono
+            });
 
+            // Marcar la ubicación del usuario con un marcador
+            L.marker([lat, lng], { icon: userIcon }).addTo(map) // Aquí se asigna el icono
+                .bindPopup('Estás aquí')
+                .openPopup();
+        },
+        (error) => {
+            console.error('Error obteniendo la ubicación:', error);
+        }
+    );
+} else {
+    alert('La geolocalización no es compatible con tu navegador.');
+}
 
 // Lista de puntos de interés para poder mostrar/ocultar según la selección del usuario
 let puntosDeInteres = [];
@@ -140,26 +163,4 @@ function mostrarTipo(mostrar)
     });
 }
 
-var marker = L.marker([51.505, -0.09]).addTo(map);
-// Función para actualizar la posición del marcador
-function updatePosition(position) {
-    var Lat = position.coords.latitude;
-    var Lon = position.coords.longitude;
-
-    // Actualizar la posición del marcador
-    marker.setLatLng([Lat, Lon]);
-    marker.bindPopup('Estás aquí')
-    .openPopup();
-    // Hacer que el mapa siga al marcador
-    map.setView([Lat, Lon], 13);
-}
-
-// Comprobar si la geolocalización está disponible
-if (navigator.geolocation) {
-    navigator.geolocation.watchPosition(updatePosition, function(error) {
-        console.log('Error al obtener la ubicación: ', error);
-    });
-} else {
-    alert('Geolocalización no soportada en este navegador');
-}
 
